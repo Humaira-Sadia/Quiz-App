@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#BE3BDC"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Question"
+        android:layout_centerHorizontal="true"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"
+        android:id="@+id/total_ques"/>
+
+    <TextView
+        android:id="@+id/no_ques"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/ques_no"
+        android:layout_marginBottom="3dp"
+        android:paddingStart="10dp"
+        android:text="Question 1 :- "
+        android:textColor="@color/white"
+        android:textSize="24dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/ques_no"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/choices_layout"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="20dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginBottom="75dp"
+        android:autoSizeMaxTextSize="30dp"
+        android:text="Question"
+        android:textColor="@color/white"
+        android:textSize="23dp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:id="@+id/choices_layout"
+        android:padding="24dp"
+        android:orientation="vertical">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/black"
+            android:text="Ans A"
+            android:id="@+id/ans_A"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/black"
+            android:text="Ans B"
+            android:id="@+id/ans_B"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/black"
+            android:text="Ans C"
+            android:id="@+id/ans_C"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/black"
+            android:text="Ans D"
+            android:id="@+id/ans_D"/>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/submit_btn"
+        android:text="Submit"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:layout_below="@id/choices_layout"
+        android:layout_marginTop="40dp"
+        android:padding="12dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"/>
+
+
+
+</RelativeLayout>
